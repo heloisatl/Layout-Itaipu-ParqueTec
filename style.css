@@ -113,7 +113,6 @@
 .menu {
     height: 60px;
     background-image: linear-gradient(180deg, #fff 0%, #DBDBDB 100%);
-
     display: flex;
 }
 
@@ -161,8 +160,26 @@
     justify-content: space-between;
 }
 
+.conteudo .vermais {
+    overflow:hidden;
+    color: white;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    font-size: 12px;
+    padding: 0 40px 0 0;
+    
+}
 
-/* cardas*/
+.conteudo .vermais:hover {
+    font-size: 12.3px;
+}
+
+
+
+/* cards*/
 
 .card-noticias {
     margin:30px 30px;
@@ -222,7 +239,7 @@
     margin-top: 20px;
 }
 
-.card-noticias .leia-mais .btn {
+.card-noticias .leia-mais .leiamais {
     background-color: #EBEBEB;
     border-radius: 15px;
     padding: 5px 10px;
@@ -235,7 +252,7 @@
     margin-right: 20px;
 }
 
-.card-noticias .leia-mais .btn:hover {
+.card-noticias .leia-mais .leiamais:hover {
     color: #fff;
     background-color: #0082c4;
 }
@@ -279,12 +296,47 @@
     transform: scale(1.2);
 }
 
-/*rodapeeeeeeeeeee*/
+
+
+
+
+
+/***********rodapeeeeeeeeeee comeca aqui***********/
 
 .rodape {
     background-image: linear-gradient(180deg, #00315e 0%, #000825 100%);
     padding: 20px 0;
+    position: relative;
+    overflow: hidden;
 }
+.rodape{
+    align-items: start;
+}
+/*.rodape::before,
+.rodape::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    background-color: #00315e;
+    opacity: 0.5;   
+    clip-path: polygon(100% 100%, 100% 0%, 70% 50%, 100% 100%);    
+}
+
+.rodape::before {
+    bottom: -25px; 
+}
+
+.rodape::after {
+    bottom: -25px; 
+    transform: rotate(180deg); 
+}*/
+
+
+
+
+
+
 
 .rodape .conteudo {
     display: flex;
@@ -349,7 +401,7 @@
 
 .rodape .coluna2 ul {
     list-style: none;
-    padding: 0;
+    padding: 0 0 0 40px;
 }
 
 .rodape .coluna2 ul li {
@@ -370,7 +422,8 @@
     height: 30px;
     width: 350px;
     margin-top: 30px;
-    border: 1px solid #0378b3;
+    color: white;
+    border: 2px solid #0378b3;
     border-radius: 20px;
     padding: 6px 20px 6px 20px;
     background-color:#0082c4;
@@ -379,7 +432,7 @@
 .rodape .coluna1 button:hover{
     background-color:transparent ;
     border: 2px solid #015985; 
-    color: #005986; 
+    color: white; 
     transition: all 0.4s ease-out;
 }
 
@@ -440,4 +493,19 @@
 .rodape .coluna2{
     display: flex; 
     flex-direction: row; 
+}
+
+/*caixa q botei os direitos dentro pq n tava centralizando*/
+.rodape .caixa{
+    display: flex;
+    justify-content: center;
+}
+.rodape .caixa .direitos{
+    color:#0251d0;
+    font-size: 12px;
+    padding: 20px;
+    display:flex;
+    justify-content: center;
+    
+    width: 30%;
 }
